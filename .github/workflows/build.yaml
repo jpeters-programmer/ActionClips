@@ -1,0 +1,11 @@
+name: Build ActionClips
+on: push
+
+jobs:
+  Build-ActionClips:
+    runs-on: ubuntu-latest
+    steps:           
+      - name: Print current directory
+        run: pwd
+      - name: List files in directory
+        run: ls
