@@ -11,7 +11,9 @@ jobs:
         run: pwd
       - name: List files in directory
         run: ls
-      - name: Check Dotnet CLI
+      - name: Check dotnet version
         run: dotnet --version
+      - name: .NET Build
+        run: dotnet build
       - name: Check NPM
-        run: npm
+        run: npm --v
