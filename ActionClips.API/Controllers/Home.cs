@@ -8,7 +8,7 @@ namespace ActionClips.API.Controllers {
 
         [HttpGet]
         public string Index() {
-            return "Hello World";
+            return "Hello World Oh no!";
         }
 
     }

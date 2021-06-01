@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ActionClips.API.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +29,8 @@ namespace ActionClips.API
         {
 
             services.AddControllers();
+            
+            services.AddSingleton<ManeuverStore>();
             services.AddCors(options => options.AddPolicy(CORS_ALL, builder => builder
                 .AllowAnyHeader()
                 .AllowAnyOrigin()
